@@ -1,6 +1,7 @@
 Project Overview
 
 This script retrieves real-time weather data for a set of cities using their latitude and longitude coordinates stored in a Snowflake table. The fetched data is processed and saved both as a CSV file in Databricks DBFS and in a Snowflake table for further analysis and use.
+
 ---
 
 Features
@@ -108,6 +109,7 @@ Notes
 Ensure the PLACES_LAT_LONG table in Snowflake has valid coordinates.
 If any API calls fail, the corresponding city data will not be included in the output. Check the logs for details.
 Modify the .mode("overwrite") to .mode("append") if you want to keep historical weather data in the Snowflake table.
+
 ---
 
 Troubleshooting
